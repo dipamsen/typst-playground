@@ -1,1 +1,3 @@
-# React + Vite + TS + MUI + React Router Starter
+# Typst Playground
+
+Demo app to render Typst on the web, using typst.ts.
