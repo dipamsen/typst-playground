@@ -4,6 +4,9 @@ import App from "./App.tsx";
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import code from "./code.ts";
+import { StoreProvider } from "easy-peasy";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,9 +18,11 @@ const theme = createTheme({ palette: { mode: "dark" } });
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <RouterProvider router={router} />
-    </ThemeProvider>
+    <StoreProvider store={code}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <RouterProvider router={router} />
+      </ThemeProvider>
+    </StoreProvider>
   </React.StrictMode>
 );

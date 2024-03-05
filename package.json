@@ -10,9 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@codemirror/lang-markdown": "^6.2.4",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.15.9",
+    "@myriaddreamin/typst-ts-renderer": "^0.4.2-rc6",
+    "@myriaddreamin/typst-ts-web-compiler": "^0.4.2-rc6",
+    "@myriaddreamin/typst.ts": "^0.4.2-rc6",
+    "@uiw/codemirror-theme-vscode": "^4.21.24",
+    "@uiw/react-codemirror": "^4.21.24",
+    "easy-peasy": "^6.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.0"
